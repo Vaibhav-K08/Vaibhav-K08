@@ -1,121 +1,90 @@
 <div align="center">
 
-<!-- Animated Header Banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Vaibhav%20Krishna%20V&fontSize=55&fontColor=ffffff&animation=twinkling&fontAlignY=55&desc=Electronics%20%7C%20AI%20%7C%20Biomedical%20%7C%20Edge%20Computing&descAlignY=75&descSize=18&descColor=a78bfa"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Vaibhav%20Krishna%20V&fontSize=55&fontColor=ffffff&animation=twinkling&fontAlignY=55&desc=Electronics%20%7C%20AI%20%7C%20Biomedical%20%7C%20Embedded%20Systems&descAlignY=75&descSize=18&descColor=a78bfa"/>
 
-<!-- Typing Animation -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&width=700&lines=Electronics+%26+Communication+Engineer;AI+%7C+Signal+Processing+%7C+Edge+AI+Developer;Real-Time+Systems+Builder;Japanese+Language+Enthusiast+%F0%9F%87%AF%F0%9F%87%B5+(N4+%E2%86%92+N3)" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&width=750&lines=Electronics+%26+Communication+Engineer;PyTorch+%7C+TensorFlow+%7C+Flask+%7C+Plotly;Biomedical+AI+%7C+Deep+RL+%7C+SCADA+Systems;Japanese+%F0%9F%87%AF%F0%9F%87%B5+N4+Certified+%E2%86%92+Targeting+N3" alt="Typing SVG" />
 </a>
 
 <br/>
 
-<!-- Profile Badges -->
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vaibhav-krishna-v)
 [![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vaibhavkv078@gmail.com)
-[![College Mail](https://img.shields.io/badge/NMIT-4285F4?style=for-the-badge&logo=google&logoColor=white)](mailto:1nt22ec182.vaibhav@nmit.ac.in)
 [![Profile Views](https://komarev.com/ghpvc/?username=vaibhav-krishna-v&style=for-the-badge&color=7c3aed&label=PROFILE+VIEWS)](https://github.com/vaibhav-krishna-v)
 
 </div>
 
 ---
 
-## 🧠 About Me
+## About Me
 
-> *"Building intelligent systems that bridge the gap between silicon and software."*
+I build systems that have to work in the real world cardiac monitors, thermal controllers, traffic signal agents, water management SCADA. Most of my projects involve AI running inside a live loop, not offline on a dataset.
 
-I'm a **final-year Electronics & Communication Engineering student** at NMIT, Bengaluru, passionate about designing real-time AI systems that operate at the edge — close to the hardware, close to the real world.
+My stack is PyTorch and TensorFlow for AI, Flask and Plotly for deployed dashboards, and SciPy for signal work. On the hardware side I have worked with FPGAs, microcontrollers, and EDA tools across multiple semesters covering VLSI, power electronics, and communication systems. I am also learning Japanese and currently preparing for N3 after clearing N4.
 
-My work spans **biomedical signal processing**, **reinforcement learning**, **thermal control systems**, and **IoT automation** — all unified by a commitment to building systems that actually work, not just in theory.
-
-- 🔬 **Focus:** Edge AI · Real-Time Systems · Biomedical Signal Processing
-- 🤖 **Current:** Building CPU-efficient deep learning inference pipelines
-- 🇯🇵 **Language:** Japanese — N4 certified, actively preparing for **N3**
-- 🏥 **Mission:** Making intelligent healthcare monitoring accessible and affordable
-- 🌱 **Learning:** Advanced RL · FPGA-based AI deployment · VLSI design flows
+- 🔬 Biomedical signal processing, CNN inference, clinical logic layers
+- 🤖 Deep RL, live training agents, multi-agent grid control
+- 🏭 SCADA digital twins, Flask deployed monitoring systems
+- 🇯🇵 Japanese — Almost N4 certified, targeting N2
 
 ---
 
-## 🚀 Featured Projects
+## Projects
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🫀 Clinical Grade Real-Time ECG AI Monitor
-**The most clinically relevant project I've built.**
+### 🫀 Clinical Grade ECG AI Monitor
 
-A complete real-time cardiac monitoring pipeline that streams ECG signals, extracts physiological features, and classifies arrhythmias using a lightweight neural network — all on CPU, no GPU required.
+Streams ECG from MIT-BIH, detects R-peaks, runs a 4-class CNN (Normal, PVC, AFib, Other) trained on real beat annotations, and monitors multiple patients at the same time using threads. AFib is caught separately through HRV analysis, SDNN and RMSSD thresholds independent of the model output. The PyQtGraph dashboard turns red the moment a clinical alarm fires.
 
-**What makes it special:**
-- 🔴 Live R-peak detection with adaptive thresholding
-- 🧠 Hybrid AI + deterministic clinical rules (prevents isolated misclassification)
-- 📊 Real-time PyQt5 dashboard with live waveform rendering
-- ✅ **92.49% classification accuracy** across 6 training epochs
-- 🏥 Validated on MIT-BIH Arrhythmia Database
+Model trains once, saves to disk, and reloads on every subsequent run.
 
-**Stack:** `Python` `TensorFlow/Keras` `SciPy` `WFDB` `PyQtGraph` `PyQt5`
+`TensorFlow` `WFDB` `SciPy` `PyQtGraph` `PyQt5` `threading`
 
-[![ECG Repo](https://img.shields.io/badge/View_Repo-ECG_Monitor-7c3aed?style=for-the-badge&logo=github)](https://github.com/vaibhav-krishna-v/ecg-ai-monitor)
+[![Repo](https://img.shields.io/badge/View_Repo-ECG_Monitor-7c3aed?style=for-the-badge&logo=github)](https://github.com/vaibhav-krishna-v/ecg-ai-monitor)
 
 </td>
 <td width="50%" valign="top">
 
-### 🚦 Smart Traffic Signal Control — DQN Reinforcement Learning
-**DQN cut average queue from 26.7 vehicles to 0.8.**
+### 🚦 Wide Scale Multi-Intersection Deep RL Traffic
 
-A multi-mode intelligent traffic control system implementing Fixed, Density-Adaptive, and Deep Q-Network (DQN) based signal control at a simulated multi-lane intersection.
+A 3x3 grid of intersections: 9 nodes, 4 lanes each controlled by a live training DQN agent. Three modes in one codebase: Fixed, Density, and DQN. The agent trains with experience replay and a target network, logs everything to TensorBoard, and gets exported as a TorchScript traced model at the end of each run. A separate analytics script reads the TensorBoard CSVs and generates comparison bar charts and a radar plot.
 
-**What makes it special:**
-- 🔴 3 control paradigms in one unified simulation
-- 🧠 DQN agent learns optimal timing from environment interaction
-- 📊 100% success rate, 4101 avg reward after training
-- 📉 Near-zero congestion with full throughput retention
-- 🏙️ Applicable to real smart city infrastructure
+DQN brought average queue from 26.7 vehicles down to 0.8.
 
-**Stack:** `Python` `NumPy` `Tkinter` `DQN/RL`
+`PyTorch` `TensorBoard` `Tkinter` `NumPy` `Matplotlib` `Pandas`
 
-[![Traffic Repo](https://img.shields.io/badge/View_Repo-Traffic_RL-7c3aed?style=for-the-badge&logo=github)](https://github.com/vaibhav-krishna-v/smart-traffic-dqn)
+[![Repo](https://img.shields.io/badge/View_Repo-Traffic_RL-7c3aed?style=for-the-badge&logo=github)](https://github.com/vaibhav-krishna-v/smart-traffic-dqn)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🌡️ AI-Based Smart Thermal Fan Control System
-**Intelligent cooling that adapts to workload — not just temperature.**
+### 🌡️ Priority Aware Industrial Thermal AI
 
-A real-time thermal regulation platform combining classical feedback control with adaptive AI logic. Features anti-windup constraints and damping mechanisms for oscillation-free cooling.
+Three thermal zones: CPU, Power, Ambient; each with its own PyTorch policy network training live during simulation. A nonlinear urgency curve maps temperature bands to cooling aggressiveness. On top of that, a spike detector catches sudden load events and a safety override takes over if any zone crosses 70°C. Anti-windup relaxation prevents the system from overcooling once temperatures stabilize.
 
-**What makes it special:**
-- 🔴 Dynamic thermal simulation (CPU + Power + Ambient)
-- 🧠 Hybrid PID + adaptive cooling response
-- 📊 65% energy efficiency · 68% thermal safety score
-- ⚡ Anti-windup prevents overshoot during thermal spikes
-- 🔧 Edge-deployable for embedded systems
+Live Flask dashboard with Plotly shows all three zone temperatures and cooling percentage updating every second.
 
-**Stack:** `Python` `NumPy` `SciPy` `Matplotlib`
+`PyTorch` `Flask` `Plotly` `NumPy` `threading`
 
-[![Thermal Repo](https://img.shields.io/badge/View_Repo-Thermal_AI-7c3aed?style=for-the-badge&logo=github)](https://github.com/vaibhav-krishna-v/smart-thermal-control)
+[![Repo](https://img.shields.io/badge/View_Repo-Thermal_AI-7c3aed?style=for-the-badge&logo=github)](https://github.com/vaibhav-krishna-v/smart-thermal-control)
 
 </td>
 <td width="50%" valign="top">
 
-### 💧 Smart Water Tank Monitoring & Control System
-**Automation that prevents both overflow and dry tanks — reliably.**
+### 💧 Smart Water Tank Digital Twin SCADA
 
-An automated water tank management system with threshold-based pump control, real-time level tracking, and a full event logging pipeline. Scalable from home use to industrial applications.
+Three tanks: Source, Process, Reserve; running as a live digital twin. The pump activates automatically when Process drops below 40% and Source has enough to transfer. If Process falls further to 35%, Reserve steps in as a secondary failsafe. Each tank is rendered as a 3D mesh in the browser, with fill height and color updating every second. The transfer pipe turns cyan when flow is active.
 
-**What makes it special:**
-- 🔴 Continuous level simulation with consumption modeling
-- 🧠 Rule-based automation with upper/lower threshold logic
-- 📊 CSV + logging module for historical analysis
-- 🔧 Scalable to IoT platforms
-- 💧 Prevents both overflow AND dry-tank conditions
+Glass style Flask dashboard, no desktop dependency.
 
-**Stack:** `Python` `NumPy` `Matplotlib` `CSV` `Logging`
+`Flask` `Plotly` `threading`
 
-[![Water Repo](https://img.shields.io/badge/View_Repo-Water_Monitor-7c3aed?style=for-the-badge&logo=github)](https://github.com/vaibhav-krishna-v/smart-water-monitor)
+[![Repo](https://img.shields.io/badge/View_Repo-Water_SCADA-7c3aed?style=for-the-badge&logo=github)](https://github.com/vaibhav-krishna-v/smart-water-monitor)
 
 </td>
 </tr>
@@ -123,7 +92,7 @@ An automated water tank management system with threshold-based pump control, rea
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## Tech Stack
 
 <div align="center">
 
@@ -135,21 +104,24 @@ An automated water tank management system with threshold-based pump control, rea
 ![Assembly](https://img.shields.io/badge/Assembly-6E4C13?style=for-the-badge&logo=assemblyscript&logoColor=white)
 
 ### AI / ML
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white)
 
-### Hardware & EDA Tools
+### Web & Visualization
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![TensorBoard](https://img.shields.io/badge/TensorBoard-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+
+### Hardware & EDA
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white)
 ![Xilinx](https://img.shields.io/badge/Xilinx_Vivado-E01F27?style=for-the-badge&logo=xilinx&logoColor=white)
 ![Keil](https://img.shields.io/badge/Keil_uVision-003B5C?style=for-the-badge&logo=arm&logoColor=white)
 ![Cadence](https://img.shields.io/badge/Cadence-005A8B?style=for-the-badge&logo=cadence&logoColor=white)
 ![HFSS](https://img.shields.io/badge/ANSYS_HFSS-FFB71B?style=for-the-badge&logo=ansys&logoColor=black)
-
-### Design & CAD
 ![SolidWorks](https://img.shields.io/badge/SolidWorks-FF0000?style=for-the-badge&logo=dassaultsystemes&logoColor=white)
 ![Fusion360](https://img.shields.io/badge/Fusion_360-FF6600?style=for-the-badge&logo=autodesk&logoColor=white)
 
@@ -157,10 +129,10 @@ An automated water tank management system with threshold-based pump control, rea
 
 ---
 
-## 📜 Certifications & Achievements
+## Certifications & Achievements
 
 <details>
-<summary><b>🏅 Click to expand — Certifications</b></summary>
+<summary><b>🏅 Certifications</b></summary>
 
 | Certification | Issuer |
 |---|---|
@@ -177,32 +149,32 @@ An automated water tank management system with threshold-based pump control, rea
 </details>
 
 <details>
-<summary><b>🏆 Click to expand — Competitions</b></summary>
+<summary><b>🏆 Competitions</b></summary>
 
 | Competition | Organizer | Result |
 |---|---|---|
 | Circuit Master | BMSCE Phase Shift 2023 | Participant |
-| Simu Racing | NMIT Arion 2024 | 🥈 **4th Place** |
+| Simu Racing | NMIT Arion 2024 | 4th Place |
 | HackWithInfy 2025 | Infosys | Participant |
-| Capgemini Brand Quest 2025 | Capgemini | **Advanced to Level 2** |
+| Capgemini Brand Quest 2025 | Capgemini | Advanced to Level 2 |
 | TATA Crucible Campus Quiz 2025 | TATA Group | Participant |
 
 </details>
 
 <details>
-<summary><b>🤝 Click to expand — Societal & Club Involvement</b></summary>
+<summary><b>🤝 Involvement</b></summary>
 
-- 🧠 **Manonandhana NGO** — Volunteered to provide free medical support to neuro-divergent children
-- 🔬 **Oasis NMIT** — Club Member
-- 🛠️ **R&D NMIT** — Club Member
-- 📚 **Shikaram NMIT** — Club Member
-- 🎙️ **Microfluidics Workshop** — "The Next Frontier in Electronics and Biomedical Innovation" (INFAB Semiconductor Pvt Ltd)
+- **Manonandhana NGO** — volunteered providing free medical support to neuro-divergent children
+- **Oasis NMIT** — Club Member
+- **R&D NMIT** — Club Member
+- **Shikaram NMIT** — Club Member
+- **Microfluidics Workshop** — The Next Frontier in Electronics and Biomedical Innovation, organized with INFAB Semiconductor Pvt Ltd
 
 </details>
 
 ---
 
-## 📊 GitHub Stats
+## GitHub Stats
 
 <div align="center">
 
@@ -215,7 +187,7 @@ An automated water tank management system with threshold-based pump control, rea
 
 ---
 
-## 🗺️ Contribution Activity
+## Contribution Activity
 
 <div align="center">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=vaibhav-krishna-v&bg_color=0f0c29&color=a78bfa&line=7c3aed&point=ffffff&area=true&hide_border=true" alt="Contribution Graph"/>
@@ -223,38 +195,31 @@ An automated water tank management system with threshold-based pump control, rea
 
 ---
 
-## 🇯🇵 Japanese Journey
+## 🇯🇵 Japanese
 
 ```
 N5 ████████████████████ Mastered
-N4 ████████████████░░░░ Certified ✅
+N4 ████████████████░░░░ Almost Certified ✅
 N3 ████████░░░░░░░░░░░░ In Progress 🎯
 N2 ░░░░░░░░░░░░░░░░░░░░ Next milestone
 ```
 
-*Studying Japanese to bridge my technical background with Japan's advanced semiconductor and robotics ecosystem.*
+Studying Japanese to work closer to Japan's semiconductor and embedded systems industry.
 
 ---
 
-## 📬 Let's Connect
+## Connect
 
 <div align="center">
 
-**Open to:** Research internships · Edge AI projects · Biomedical tech collaborations · Smart systems development
-
-[![Email](https://img.shields.io/badge/Email_Me-vaibhavkv078%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vaibhavkv078@gmail.com)
-[![Phone](https://img.shields.io/badge/Phone-+91_9448430273-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+919448430273)
+[![Email](https://img.shields.io/badge/Email-vaibhavkv078%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vaibhavkv078@gmail.com)
 
 </div>
 
 ---
 
 <div align="center">
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=100&section=footer&fontColor=ffffff"/>
 
-*"The best systems are those that work quietly, reliably, and intelligently — just like nature."*
-
-**Vaibhav Krishna V · USN: 1NT22EC182 · NMIT Bengaluru**
-
+**Vaibhav Krishna V**
 </div>
