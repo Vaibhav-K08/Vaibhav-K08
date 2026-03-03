@@ -3,7 +3,7 @@
 <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Vaibhav%20Krishna%20V&fontSize=55&fontColor=ffffff&animation=twinkling&fontAlignY=55&desc=Electronics%20%7C%20AI%20%7C%20Biomedical%20%7C%20Embedded%20Systems&descAlignY=75&descSize=18&descColor=a78bfa"/>
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&width=750&lines=Electronics+%26+Communication+Engineer;PyTorch+%7C+TensorFlow+%7C+Flask+%7C+Plotly;Biomedical+AI+%7C+Deep+RL+%7C+SCADA+Systems;Japanese+%F0%9F%87%AF%F0%9F%87%B5+N4+Certified+%E2%86%92+Targeting+N3" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&width=750&lines=Electronics+%26+Communication+Engineer;PyTorch+%7C+TensorFlow+%7C+Flask+%7C+Plotly;Biomedical+AI+%7C+Deep+RL+%7C+SCADA+Systems;Japanese+%F0%9F%87%AF%F0%9F%87%B5+N4+Certified+%E2%86%92+Targeting+N2" alt="Typing SVG" />
 </a>
 
 <br/>
